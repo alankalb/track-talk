@@ -1,6 +1,10 @@
 {
   "name": "track_talk",
   "private": true,
+  "scripts": {
+    "types": "graphql-typescript-definitions --schema-types-path app/ui/graphql/types",
+    "types-watch": "graphql-typescript-definitions --schema-types-path app/ui/graphql/types --watch"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
     "@rails/actioncable": "^6.0.0",
@@ -24,6 +28,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "graphql-typescript-definitions": "^0.20.2",
     "webpack-dev-server": "^3.11.0"
   }
 }
