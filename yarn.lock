@@ -3901,6 +3901,11 @@ graphql-tool-utilities@^1.2.0:
     core-js "^2.0.0"
     graphql ">=14.5.0 <15.0.0"
 
+graphql-typed@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/graphql-typed/-/graphql-typed-0.6.0.tgz#22482dd1305a717d6fcc5a8967674c47045d7e67"
+  integrity sha512-vGN+GulPFNkFeoCwTSytJCslEmHGBKLtMpAFO2P13eKYtyEgPMSlat19ZLzTod6DMmh1hXeBglgpm5OVjGUd5Q==
+
 graphql-typescript-definitions@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/graphql-typescript-definitions/-/graphql-typescript-definitions-0.20.2.tgz#481f41cd4c462bad474fdd02d10d769eee19ced5"
@@ -3923,17 +3928,12 @@ graphql-typescript-definitions@^0.20.2:
     upper-case-first "^2.0.1"
     yargs "^15.3.1"
 
-"graphql@14.0.2 - 14.2.0 || ^14.3.1", "graphql@>=14.5.0 <15.0.0":
+"graphql@14.0.2 - 14.2.0 || ^14.3.1", "graphql@>=14.5.0 <15.0.0", graphql@^14.0.0:
   version "14.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.6.0.tgz#57822297111e874ea12f5cd4419616930cd83e49"
   integrity sha512-VKzfvHEKybTKjQVpTFrA5yUq2S9ihcZvfJAtsDBBCuV6wauPu1xl/f9ehgVf0FcEJJs4vz6ysb/ZMkGigQZseg==
   dependencies:
     iterall "^1.2.2"
-
-graphql@^15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.0.0.tgz#042a5eb5e2506a2e2111ce41eb446a8e570b8be9"
-  integrity sha512-ZyVO1xIF9F+4cxfkdhOJINM+51B06Friuv4M66W7HzUOeFd+vNzUn4vtswYINPi6sysjf1M2Ri/rwZALqgwbaQ==
 
 handle-thing@^2.0.0:
   version "2.0.1"
