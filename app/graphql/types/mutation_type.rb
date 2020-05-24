@@ -1,5 +1,5 @@
 module Types
-  class MutationType < Types::BaseObject
+  class MutationType < BaseObject
     field :create_post, mutation: Mutations::CreatePost
     field :create_comment, mutation: Mutations::CreateComment
   end

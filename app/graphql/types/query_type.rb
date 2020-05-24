@@ -1,5 +1,5 @@
 module Types
-  class QueryType < Types::BaseObject
+  class QueryType < BaseObject
     field :posts, [PostType], null: false
 
     def posts
