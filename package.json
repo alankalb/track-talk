@@ -1,6 +1,10 @@
 {
   "name": "track_talk",
   "private": true,
+  "scripts": {
+    "types": "graphql-typescript-definitions --schema-types-path app/ui/graphql/types",
+    "types-watch": "graphql-typescript-definitions --schema-types-path app/ui/graphql/types --watch"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
     "@rails/actioncable": "^6.0.0",
@@ -9,9 +13,15 @@
     "@rails/webpacker": "4.2.2",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "graphql": "^14.0.0",
+    "graphql-typed": "^0.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
     "ts-loader": "^7.0.4",
     "turbolinks": "^5.2.0",
@@ -19,6 +29,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "graphql-typescript-definitions": "^0.20.2",
     "webpack-dev-server": "^3.11.0"
   }
 }

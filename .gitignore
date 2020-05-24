@@ -29,3 +29,5 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+*.graphql.d.ts
