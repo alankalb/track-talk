@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App } from "../../ui/Foundation";
+import { App } from "../components/Foundation";
+import "../stylesheets/Index.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(
