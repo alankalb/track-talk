@@ -25,7 +25,7 @@ export default function Homepage() {
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />{" "}
-          <i>TrackTalk</i>
+          TrackTalk
         </Navbar.Brand>
       </Link>
     </Navbar>
