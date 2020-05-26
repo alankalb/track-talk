@@ -3,6 +3,7 @@ import ApolloClient from "apollo-client";
 import { ApolloProvider } from "react-apollo";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Homepage } from "../Homepage";
 
@@ -26,7 +27,13 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <ApolloProvider client={client}>
-      <Homepage />
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+      </Router>
     </ApolloProvider>
   );
 }
