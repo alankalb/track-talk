@@ -9,7 +9,7 @@ class Mutations::CreateComment < Mutations::BaseMutation
 
   def resolve(text:, post_id:)
     post = Post.find(post_id)
-    comment = post.comments.build(text: text)
+    comment = post.comments.build(text: text, user: context[:current_user])
     if comment.save
       # Successful creation, return the created object with no errors
       {
