@@ -8,7 +8,7 @@ class Mutations::CreatePost < Mutations::BaseMutation
   field :errors, [String], null: false
 
   def resolve(title:, text:)
-    post = Post.new(title: title, text: text)
+    post = Post.new(title: title, text: text, user: context[:current_user])
     if post.save
       {
         post: post,
