@@ -1,11 +1,9 @@
 import React from "react";
 import { useQuery } from "react-apollo";
-import Logo from "logo.svg";
-
-import { Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 import PostQuery, { PostsQueryData } from "./graphql/PostsQuery.graphql";
+
+import { useUserContext } from "utilities";
 
 export default function Homepage() {
   const { loading, error, data } = useQuery<PostsQueryData>(PostQuery);
@@ -14,20 +12,9 @@ export default function Homepage() {
   console.log(loading);
   console.log(error);
 
-  return (
-    <Navbar bg="dark" sticky="top" variant="dark">
-      <Link to="/">
-        <Navbar.Brand>
-          <img
-            src={Logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />{" "}
-          TrackTalk
-        </Navbar.Brand>
-      </Link>
-    </Navbar>
-  );
+  const { currentUser } = useUserContext();
+
+  const message = currentUser ? `Hello ${currentUser.name}!` : "Hello World!";
+
+  return <p>{message}</p>;
 }
