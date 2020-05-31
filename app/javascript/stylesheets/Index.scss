@@ -1,3 +1,7 @@
 $body-bg: #fafbfc;
 
+.container-fluid {
+  max-width: 1300px;
+}
+
 @import "~bootstrap/scss/bootstrap";
