@@ -1,0 +1,13 @@
+mutation CreateUser($name: String!, $email: String!, $password: String!) {
+  createUser(
+    input: {
+      name: $name
+      authProvider: { credentials: { email: $email, password: $password } }
+    }
+  ) {
+    user {
+      id
+    }
+    errors
+  }
+}

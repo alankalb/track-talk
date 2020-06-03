@@ -9,6 +9,7 @@ module Mutations
 
     field :token, String, null: true
     field :user, Types::UserType, null: true
+    field :errors, [String], null: false
 
     def resolve(name: nil, auth_provider: nil)
       user = User.new(
@@ -26,11 +27,13 @@ module Mutations
         {
           user: user,
           token: token,
+          errors: []
         }
       else
         {
           user: nil,
           token: nil,
+          errors: user.errors.full_messages
         }
       end
     end
