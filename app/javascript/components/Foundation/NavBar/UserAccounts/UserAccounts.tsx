@@ -2,7 +2,7 @@ import React from "react";
 
 import { Nav } from "react-bootstrap";
 
-import { LogOut, SignIn } from "./components";
+import { LogOut, SignIn, CreateAccount } from "./components";
 import { useUserContext } from "utilities";
 
 export default function NavBar() {
@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     <>
-      <Nav.Link onClick={() => console.log("create")}>Create Account</Nav.Link>
+      <CreateAccount />
       <SignIn />
     </>
   );
