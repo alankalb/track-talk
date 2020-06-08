@@ -32,3 +32,4 @@ yarn-debug.log*
 
 sendgrid.env
 sendgrid_test.rb
+.env
