@@ -30,3 +30,6 @@
 yarn-debug.log*
 .yarn-integrity
 
+sendgrid.env
+sendgrid_test.rb
+.env
