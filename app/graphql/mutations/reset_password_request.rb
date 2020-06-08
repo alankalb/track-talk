@@ -29,7 +29,7 @@ module Mutations
       token_expiry = Time.now.utc + 1800
       token_expiry = token_expiry.iso8601(6)
 
-      if user.update(reset_token: token, reset_token_expiry: token_expiry) 
+      if user.update(reset_token: token, reset_token_expiry: token_expiry, reset_token_used: false) 
         send_reset_password_email(user, token)
       else
         {
@@ -61,7 +61,7 @@ module Mutations
       if response.status_code == '202'
         {
           user: user,
-          errors: [user.reset_token_expiry]
+          errors: []
         }
       else
         {
