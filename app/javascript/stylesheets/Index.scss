@@ -8,4 +8,12 @@ $theme-colors: (
   max-width: 1300px;
 }
 
+.forgot-password {
+  margin-right: auto !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 @import "~bootstrap/scss/bootstrap";
