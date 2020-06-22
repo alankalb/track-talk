@@ -44,13 +44,13 @@ module Mutations
       Hello #{user.name},\n
       We are sending you this email as you have forgotten your password for TrackTalk.ca and have requested to reset it.
       If you have not requested to reset your password, please ignore this email or contact us at info@tracktalk.ca.\n
-      To reset your password visit www.tracktalk.ca/password_reset and enter the following 6-digit authentication code along with your email and new password.\n
+      To reset your password visit www.tracktalk.ca/password_reset and enter the following 6-digit authentication code along with your email and new password. This token will expire in 30 minutes.\n
       #{token}\n
       All the best,\n
       Team TrackTalk
       "
 
-      from = Email.new(email: 'test@tracktalk.ca')
+      from = Email.new(email: 'password_reset@tracktalk.ca')
       to = Email.new(email: "#{user.email}")
       subject = 'TrackTalk Password Reset'
       content = Content.new(type: 'text/plain', value: value)

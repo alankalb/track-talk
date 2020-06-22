@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   end
   post "/graphql", to: "graphql#execute"
 
-  root to: 'home#index'
+  root to: 'ui#index'
+  get '*a', to: 'ui#index'
 end

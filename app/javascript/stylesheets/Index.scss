@@ -8,12 +8,24 @@ $theme-colors: (
   max-width: 1300px;
 }
 
+@import "~bootstrap/scss/bootstrap";
+
 .forgot-password {
-  margin-right: auto !important;
+  margin-right: auto;
 }
 
 a:hover {
   cursor: pointer;
 }
 
-@import "~bootstrap/scss/bootstrap";
+.navbar-spacing {
+  margin-bottom: 20px;
+}
+
+.reset-password-btn {
+  padding-top: 10px;
+}
+
+.spinner {
+  margin-left: 5px;
+}
