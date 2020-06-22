@@ -9,3 +9,23 @@ $theme-colors: (
 }
 
 @import "~bootstrap/scss/bootstrap";
+
+.forgot-password {
+  margin-right: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.navbar-spacing {
+  margin-bottom: 20px;
+}
+
+.reset-password-btn {
+  padding-top: 10px;
+}
+
+.spinner {
+  margin-left: 5px;
+}
