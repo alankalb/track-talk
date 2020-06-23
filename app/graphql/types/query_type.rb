@@ -1,6 +1,6 @@
 module Types
   class QueryType < BaseObject
-    field :posts, [PostType], null: false
+    field :posts, PostType.connection_type, null: false
 
     field :user, UserType, null: true
 

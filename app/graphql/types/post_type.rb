@@ -4,6 +4,6 @@ module Types
     field :title, String, null: false
     field :text, String, null: false
     field :posted_by, UserType, null: true, method: :user
-    field :comments, [CommentType], null: false
+    field :comments, CommentType.connection_type, null: false
   end
 end
