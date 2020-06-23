@@ -1,10 +1,13 @@
 query Posts {
-  posts {
-    id
-    text
-    title
-    comments {
+  posts(first: 25) {
+    nodes {
+      id
       text
+      title
+      postedBy {
+        name
+        id
+      }
     }
   }
 }
